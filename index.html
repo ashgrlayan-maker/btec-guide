@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل مسار BTEC</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--paper:#eef2f6;--card:#fff;--teal:#1b998b;--mark:#ffc93c;--muted:#52607a;--line:#cfd8e3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.95 "IBM Plex Sans Arabic",Tahoma,sans-serif}
+h1,h2,h3{font-family:"Reem Kufi","IBM Plex Sans Arabic",Tahoma,sans-serif;line-height:1.4;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+header.hero{background:var(--ink);color:#fff;padding:64px 0 48px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem)}
+.hero p{max-width:60ch;color:#cbd5e6;margin:16px 0 32px}
+.ladder{display:flex;gap:10px;align-items:flex-end;height:150px}
+.ladder div{flex:1;max-width:120px;border-radius:8px 8px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font:700 1.6rem "Reem Kufi",sans-serif;color:var(--ink)}
+.ladder .p{height:45%;background:#9fb3d1}.ladder .m{height:70%;background:var(--teal)}.ladder .d{height:100%;background:var(--mark)}
+.ladder-cap{color:#cbd5e6;font-size:.9rem;margin-top:8px}
+nav.top{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;overflow-x:auto;padding:8px 20px}
+nav.top a{white-space:nowrap;text-decoration:none;padding:4px 12px;border-radius:999px;font-size:.92rem;color:var(--muted)}
+nav.top a:hover{background:var(--paper);color:var(--ink)}
+section{padding:48px 0 8px}
+section h2{font-size:1.9rem;margin-bottom:14px}
+section h2::after{content:"";display:block;width:56px;height:5px;background:var(--mark);margin-top:8px;border-radius:3px}
+p{max-width:72ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.box h3{font-size:1.2rem;margin-bottom:4px}
+.box p{margin:6px 0 0;color:var(--muted);font-size:.97rem;line-height:1.8}
+.lvl{border-right:6px solid var(--teal)}
+.tabs{display:flex;gap:8px;margin:18px 0 10px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer}
+.tabs button,.chips button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:4px 16px;border-radius:999px}
+.tabs button[aria-selected=true],.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 22px}
+.panel[hidden]{display:none}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.spec[hidden]{display:none}
+.tag{display:inline-block;font-size:.8rem;background:var(--paper);border-radius:6px;padding:0 8px;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 20px;margin-top:10px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 4px;color:var(--muted)}
+.tw{overflow-x:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;background:var(--card);min-width:560px}
+th,td{padding:10px 14px;border:1px solid var(--line);text-align:right;vertical-align:top;font-size:.96rem;line-height:1.8}
+th{background:var(--ink);color:#fff;font-weight:500}
+ul.tips{padding-right:22px;max-width:72ch}
+ul.tips li{margin:8px 0}
+footer{margin-top:56px;padding:28px 0;background:var(--ink);color:#cbd5e6;font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>مسار BTEC: تعلّم بالتطبيق، لا بالحفظ فقط</h1>
+    <p>دليل مبسّط يشرح فكرة BTEC، ومستوياته، وطريقة التقييم فيه، والتخصصات المتاحة، والمواد التي يدرسها طالب تخصص تكنولوجيا المعلومات، وإلى أين يمكن أن يوصلك بعد التخرج.</p>
+    <div class="ladder" aria-hidden="true"><div class="p">P</div><div class="m">M</div><div class="d">D</div></div>
+    <div class="ladder-cap">ثلاث درجات تلخّص التقييم: نجاح، ثم امتياز جزئي، ثم تميّز</div>
+  </div>
+</header>
+
+<nav class="top" aria-label="أقسام الصفحة">
+  <div class="wrap">
+    <a href="#what">ما هو BTEC</a><a href="#idea">الفكرة</a><a href="#levels">المستويات</a><a href="#grading">التقييم</a><a href="#fields">التخصصات</a><a href="#it">مواد تخصص IT</a><a href="#compare">مقارنة</a><a href="#after">بعد BTEC</a><a href="#tips">نصائح</a><a href="#faq">أسئلة شائعة</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="what">
+  <h2>ما هو BTEC؟</h2>
+  <p>BTEC اختصار لـ Business and Technology Education Council، وهي مؤسسة بريطانية قديمة تُدار اليوم تحت مظلة شركة Pearson. المقصود بـ BTEC هو مجموعة من المؤهلات المهنية والتطبيقية التي تُدرَّس في المدارس والكليات حول العالم، وتجمع بين المعرفة النظرية والمهارات العملية المرتبطة بسوق العمل.</p>
+  <p>الفرق الأساسي بينه وبين المسار الأكاديمي التقليدي أن الطالب لا يعتمد في نتيجته على امتحان واحد في نهاية السنة، بل يُقيَّم عبر واجبات ومشاريع وتقارير يعمل عليها خلال الدراسة، ويُطلب منه غالباً أن يتصرف كما يتصرف موظف في الميدان الذي يدرسه.</p>
+</section>
+
+<section id="idea">
+  <h2>فكرة المسار</h2>
+  <p>الفكرة أن يتعلم الطالب بالممارسة. بدل أن يقرأ عن تصميم قاعدة بيانات فقط، يُطلب منه أن يصمم قاعدة بيانات لشركة افتراضية، ويشرح قراراته، ثم يقيّم النتيجة. وبدل أن يحفظ مفاهيم التسويق، يعدّ خطة لمنتج محدد ويبرر خياراته.</p>
+  <div class="grid">
+    <div class="box"><h3>تعلّم قائم على سيناريو</h3><p>كل واجب تقريباً يبدأ بسيناريو من الواقع: شركة، عميل، مشكلة، وأنت مطالب بحلها وتوثيق الحل.</p></div>
+    <div class="box"><h3>تقييم مستمر</h3><p>الدرجة تتوزع على وحدات وواجبات خلال العام، فلا ينهار كل شيء بسبب يوم امتحان سيئ.</p></div>
+    <div class="box"><h3>مهارات للعمل</h3><p>البحث، وكتابة التقارير، والعرض، وإدارة الوقت، والعمل ضمن مواعيد تسليم، وهي مهارات يطلبها أصحاب العمل والجامعات.</p></div>
+    <div class="box"><h3>تخصص مبكر</h3><p>تختار مجالاً واحداً وتتعمق فيه، لذلك يناسب من يعرف ما يحب أو يريد تجربة مجال بجدية.</p></div>
+  </div>
+</section>
+
+<section id="levels">
+  <h2>مستويات BTEC</h2>
+  <p>تختلف التسميات من بلد إلى آخر ومن سنة إلى أخرى، لكن الصورة العامة هي التالية، والأفضل دائماً أن تتأكد من مدرستك أو من موقع Pearson الرسمي.</p>
+  <div class="grid">
+    <div class="box lvl"><h3>المستوى 1 / 2 (Tech Award)</h3><p>مؤهلات تمهيدية قصيرة نسبياً، تعطي فكرة عن مجال معين، وتُدرَّس غالباً في المراحل المدرسية الأولى من التخصص.</p></div>
+    <div class="box lvl"><h3>المستوى 3 (National)</h3><p>هو الأشهر عند طلاب المرحلة الثانوية. يأتي بأحجام مختلفة: Extended Certificate، وFoundation Diploma، وDiploma، وExtended Diploma، وكلما كبر الحجم زادت الوحدات وساعات الدراسة.</p></div>
+    <div class="box lvl"><h3>المستوى 4 و5 (Higher National)</h3><p>مؤهلات HNC وHND، وهي بمستوى أعلى من الثانوية وتقترب من السنتين الأوليين في الجامعة، وتُدرَّس في بعض الكليات.</p></div>
+  </div>
+</section>
+
+<section id="grading">
+  <h2>كيف يُقيَّم الطالب؟</h2>
+  <p>كل وحدة فيها معايير تقييم مكتوبة بوضوح، وتُرمَّز بحروف وأرقام (مثل P1 وM1 وD1). المعايير الأعلى تطلب منك أن تذهب أبعد من مجرد الوصف. اضغط على كل درجة لترى المقصود منها.</p>
+  <div class="tabs" role="tablist" aria-label="الدرجات">
+    <button role="tab" aria-selected="true" aria-controls="t-p" id="b-p">Pass</button>
+    <button role="tab" aria-selected="false" aria-controls="t-m" id="b-m">Merit</button>
+    <button role="tab" aria-selected="false" aria-controls="t-d" id="b-d">Distinction</button>
+  </div>
+  <div class="panel" role="tabpanel" id="t-p" aria-labelledby="b-p"><strong>النجاح (P):</strong> تُظهر أنك فهمت الأساسيات. تصف، وتشرح، وتنفّذ المطلوب بشكل صحيح. مثال: تصف ما هو الجدول في قاعدة البيانات، وتنشئ جدولاً يحقق المطلوب.</div>
+  <div class="panel" role="tabpanel" id="t-m" aria-labelledby="b-m" hidden><strong>الامتياز (M):</strong> تحلل وتقارن وتربط الأفكار ببعضها. لا يكفي أن تصف، بل تشرح لماذا. مثال: تقارن بين طريقتين لتنظيم البيانات وتبين أيهما أنسب للسيناريو.</div>
+  <div class="panel" role="tabpanel" id="t-d" aria-labelledby="b-d" hidden><strong>التميّز (D):</strong> تقيّم وتبرر وتصل إلى استنتاجات مبنية على أدلة. تحكم على جودة عملك أو حلولك، وتقترح تحسينات واقعية. وفي بعض مؤهلات المستوى 3 توجد درجة أعلى هي *Distinction.</div>
+  <p style="margin-top:16px">ملاحظة مهمة: لا تحصل على Merit أو Distinction في الوحدة إلا إذا حققت معايير الدرجة الأدنى أولاً، فالدرجات تبنى فوق بعضها كالدرج. وغالباً يمكن إعادة تقديم الواجب مرة محدودة إذا لم تحقق المعايير، لكن الشروط تحددها المدرسة والجهة المانحة.</p>
+</section>
+
+<section id="fields">
+  <h2>التخصصات الشائعة</h2>
+  <p>تتوفر BTEC في عشرات المجالات، لكن المتاح فعلياً يعتمد على المدرسة أو الكلية. هذه أشهر المجالات، ويمكنك التصفية حسب الاهتمام.</p>
+  <div class="chips" role="group" aria-label="تصفية التخصصات">
+    <button aria-pressed="true" data-f="all">الكل</button>
+    <button aria-pressed="false" data-f="tech">التقنية والهندسة</button>
+    <button aria-pressed="false" data-f="biz">الأعمال والخدمات</button>
+    <button aria-pressed="false" data-f="care">الصحة والعلوم</button>
+    <button aria-pressed="false" data-f="art">الفنون والإعلام</button>
+  </div>
+  <div class="grid" id="specs">
+    <div class="box spec" data-c="tech"><h3>تكنولوجيا المعلومات (IT)</h3><span class="tag">تقنية</span><p>أنظمة الحاسوب، وقواعد البيانات، والشبكات، وتطوير المواقع، والأمن السيبراني، والبرمجة، حسب البرنامج.</p></div>
+    <div class="box spec" data-c="tech"><h3>الحوسبة (Computing)</h3><span class="tag">تقنية</span><p>تركيز أكبر على البرمجة وتصميم الأنظمة وحل المشكلات الحاسوبية.</p></div>
+    <div class="box spec" data-c="tech"><h3>الهندسة (Engineering)</h3><span class="tag">تقنية</span><p>ميكانيكا وكهرباء وتصنيع وتصميم هندسي، مع قراءة المخططات وحل المسائل التطبيقية.</p></div>
+    <div class="box spec" data-c="tech"><h3>البناء والتشييد</h3><span class="tag">تقنية</span><p>مواد البناء، والتخطيط، والسلامة المهنية، وإدارة المشاريع الإنشائية.</p></div>
+    <div class="box spec" data-c="biz"><h3>الأعمال (Business)</h3><span class="tag">أعمال</span><p>إدارة، وتسويق، ومحاسبة أساسية، وريادة الأعمال، وكيف تعمل الشركات وتتخذ قراراتها.</p></div>
+    <div class="box spec" data-c="biz"><h3>السياحة والضيافة</h3><span class="tag">أعمال</span><p>خدمة العملاء، وإدارة الفعاليات، وتنظيم الرحلات، وعمل الفنادق والمطاعم.</p></div>
+    <div class="box spec" data-c="biz"><h3>الخدمات العامة والقانون</h3><span class="tag">أعمال</span><p>مدخل إلى الشرطة والدفاع والإسعاف والعمل المجتمعي، وإلى أساسيات القانون في بعض البرامج.</p></div>
+    <div class="box spec" data-c="care"><h3>الصحة والرعاية الاجتماعية</h3><span class="tag">صحة</span><p>رعاية المرضى وكبار السن والأطفال، والتواصل الإنساني، وأساسيات الصحة العامة.</p></div>
+    <div class="box spec" data-c="care"><h3>العلوم التطبيقية</h3><span class="tag">صحة</span><p>أحياء وكيمياء وفيزياء بأسلوب عملي، مع تجارب وتقارير مخبرية.</p></div>
+    <div class="box spec" data-c="care"><h3>الرياضة واللياقة</h3><span class="tag">صحة</span><p>علم التدريب، والتغذية الرياضية، والتشريح الوظيفي، وتنظيم الأنشطة الرياضية.</p></div>
+    <div class="box spec" data-c="art"><h3>الفنون والتصميم</h3><span class="tag">فنون</span><p>رسم، وتصميم جرافيك، وتصميم منتجات، مع ملف أعمال (Portfolio) يتطور خلال الدراسة.</p></div>
+    <div class="box spec" data-c="art"><h3>الإعلام والإنتاج</h3><span class="tag">فنون</span><p>تصوير، ومونتاج، وكتابة محتوى، وإنتاج مواد صوتية ومرئية.</p></div>
+    <div class="box spec" data-c="art"><h3>الفنون الأدائية</h3><span class="tag">فنون</span><p>تمثيل ومسرح وموسيقى ورقص، مع عروض عملية أمام جمهور.</p></div>
+  </div>
+</section>
+
+<section id="it">
+  <h2>مواد تخصص تكنولوجيا المعلومات</h2>
+  <p>أسماء الوحدات تتغير بحسب الإصدار والمستوى، لكن هذه نماذج من المواضيع التي يدرسها طالب IT عادة. اضغط على أي عنوان لتفتح الشرح.</p>
+  <details><summary>استخدام التقنية (Using Technology)</summary><p>التعامل مع برامج المكتب (الوورد والإكسل والعروض)، وتنسيق المستندات، واستخدام الأدوات الرقمية لإنجاز مهام عمل حقيقية، وفهم كيفية اختيار الأداة المناسبة للمهمة.</p></details>
+  <details><summary>النمذجة (Modelling)</summary><p>بناء نماذج ببرامج الجداول مثل الإكسل: معادلات، ودوال، ومخططات، وسيناريوهات «ماذا لو»، لتحليل البيانات والمساعدة في اتخاذ القرار.</p></details>
+  <details><summary>قواعد البيانات (Databases)</summary><p>تخطيط الجداول والعلاقات بينها، وإدخال البيانات واسترجاعها، والاستعلامات والنماذج والتقارير، وأهمية دقة البيانات وأمنها.</p></details>
+  <details><summary>أنظمة تكنولوجيا المعلومات</summary><p>مكونات الحاسوب والشبكات، وأنظمة التشغيل، وكيف تعمل الأنظمة داخل المؤسسات، ومخاطر التقنية وإدارتها.</p></details>
+  <details><summary>تطوير المواقع والبرمجة</summary><p>أساسيات HTML وCSS وJavaScript، وتصميم صفحات ويب، وتفكير برمجي، وكتابة برامج صغيرة واختبارها.</p></details>
+  <details><summary>الأمن السيبراني وحماية البيانات</summary><p>التهديدات الشائعة، وكلمات المرور والتشفير، وقوانين الخصوصية، وكيفية تقليل المخاطر في المؤسسة.</p></details>
+  <details><summary>التواصل ووسائل التواصل الاجتماعي في الأعمال</summary><p>كيف تستخدم الشركات المنصات الرقمية للتسويق والتواصل مع العملاء، وكيف تقاس فعالية ذلك.</p></details>
+</section>
+
+<section id="compare">
+  <h2>مقارنة سريعة مع المسار الأكاديمي</h2>
+  <div class="tw"><table>
+    <thead><tr><th>الجانب</th><th>BTEC</th><th>المسار الأكاديمي التقليدي</th></tr></thead>
+    <tbody>
+      <tr><td>طريقة التقييم</td><td>واجبات ومشاريع وتقارير خلال العام</td><td>امتحانات رئيسية في نهاية المرحلة</td></tr>
+      <tr><td>أسلوب التعلم</td><td>عملي وتطبيقي مرتبط بسيناريوهات</td><td>نظري في الغالب</td></tr>
+      <tr><td>التركيز</td><td>مجال واحد بعمق</td><td>مواد متعددة بشكل أوسع</td></tr>
+      <tr><td>الضغط</td><td>مواعيد تسليم متكررة وعبء مستمر</td><td>ضغط مرتفع قرب الامتحانات</td></tr>
+      <tr><td>المهارات المكتسبة</td><td>بحث وتوثيق وعرض وإدارة وقت</td><td>حفظ وحل مسائل وتحليل نظري</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="after">
+  <h2>ماذا بعد BTEC؟</h2>
+  <p>هناك ثلاثة طرق رئيسية: الجامعة، أو العمل، أو التدريب المهني. كثير من الجامعات حول العالم تقبل مؤهلات BTEC من المستوى 3 مع نظام نقاط خاص بها (في بريطانيا يُسمى UCAS Points)، لكن قبولها يختلف من جامعة إلى أخرى ومن تخصص إلى آخر، فتحقق دائماً من شروط الجامعة التي تريدها قبل أن تختار.</p>
+  <p>أما في الأردن فاعتماد المؤهل لدى الجامعات المحلية ووزارة التعليم العالي له إجراءات خاصة، لذلك اسأل مدرستك والجهة المعنية مبكراً ولا تنتظر آخر سنة. ومن جهة العمل، فتخصصات مثل IT والأعمال والهندسة تعطيك مهارات يمكن أن تبدأ بها وظيفة مبتدئة أو تدريباً عملياً.</p>
+</section>
+
+<section id="tips">
+  <h2>نصائح للنجاح في BTEC</h2>
+  <ul class="tips">
+    <li><strong>اقرأ ورقة المعايير أولاً.</strong> كل ما يُطلب منك مكتوب فيها، وتحقيق كل معيار بالترتيب هو طريق الدرجة.</li>
+    <li><strong>ابدأ مبكراً.</strong> الواجبات تتراكم، والتأجيل أكبر عدو للطالب هنا.</li>
+    <li><strong>اشرح «لماذا».</strong> الفرق بين Pass وMerit وDistinction غالباً في التبرير وليس في كمية الكتابة.</li>
+    <li><strong>وثّق عملك بلقطات شاشة وملاحظات.</strong> كثير من المهام تُقيَّم على الدليل الذي يثبت أنك نفذت.</li>
+    <li><strong>اكتب بأسلوبك.</strong> النسخ من الإنترنت أو من زميل يعرّضك لقضايا الانتحال وقد يلغي الواجب.</li>
+    <li><strong>اطلب الملاحظات من المعلم</strong> قبل موعد التسليم النهائي إن سمحت المدرسة بذلك.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>أسئلة شائعة</h2>
+  <details><summary>هل BTEC أسهل من الثانوية العامة؟</summary><p>ليس أسهل، لكنه مختلف. الضغط موزع على السنة، ويحتاج التزاماً ومسؤولية أكثر من الحفظ قبل الامتحان.</p></details>
+  <details><summary>هل أستطيع دراسة الطب أو مجالات تتطلب علوماً بعد BTEC؟</summary><p>تتفاوت الشروط كثيراً. بعض الكليات الصحية تقبل BTEC في العلوم أو الصحة وتطلب معها مواد إضافية، أما الطب فشروطه أشد، فاسأل الجامعة مباشرة.</p></details>
+  <details><summary>هل توجد امتحانات في BTEC؟</summary><p>نعم، بعض الوحدات في بعض المؤهلات تُقيَّم بامتحان خارجي أو مهمة خارجية، لكن الجزء الأكبر عادة داخلي من واجبات ومشاريع.</p></details>
+  <details><summary>كيف أعرف إن كان BTEC مناسباً لي؟</summary><p>إذا كنت تفضّل العمل العملي والمشاريع ولديك اهتمام واضح بمجال معين، وتستطيع تنظيم وقتك، فغالباً سيناسبك. وإذا كنت تفضّل الامتحانات المباشرة وأنماط الدراسة الأكاديمية فقد يكون المسار الآخر أنسب.</p></details>
+</section>
+
+</main>
+
+<footer><div class="wrap">هذه الصفحة للتعريف العام فقط، والتفاصيل الرسمية للمؤهلات والتقييم والقبول تُؤخذ من موقع Pearson ومن مدرستك والجامعة التي تقصدها.</div></footer>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('[role=tab]');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){
+        var on=x===t;
+        x.setAttribute('aria-selected',on);
+        document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+      });
+    });
+  });
+  var chips=document.querySelectorAll('.chips button');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+      var f=c.dataset.f;
+      document.querySelectorAll('.spec').forEach(function(s){
+        s.hidden=!(f==='all'||s.dataset.c===f);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
